@@ -1,0 +1,169 @@
+/* General Style for Wesbsite */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('Images/Background_for_website.jpg'); /* make sure that the file name always matches :) */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Header style rules*/
+header {
+    background-color: #cbb7ff;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    width: 80%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation style rules*/
+nav {
+    background-color: #e3d8ff;
+    padding: 1rem;
+    margin: -15px auto 2rem;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5b3fcc;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section special rules*/
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+#SkillSets {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.skill {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill p {
+    font-weight: bold;
+    color: #5b3fcc;
+}
+h2 {
+    color: #5b3fcc;
+}
+
+img{
+    border-radius: 50px;
+    align-items: center;
+    height: 480px;
+}
+
+/* Footer */
+footer {
+    background-color: #cbb7ff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tablet Viewport */
+@media (max-width: 768px) {
+    .skill {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .skill img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #SkillSets {
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 90%;
+    }
+}
+
+/* Mobile Viewport */
+@media (max-width: 480px) {
+    .skill {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #SkillSets {
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
